@@ -8,7 +8,13 @@
   <style>
 
     body {
-      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    article p {
+      font-size: 20px;
+      font-weight: thin;
     }
 
     #navbar {
@@ -28,15 +34,21 @@
     }
 
     #navbar li {
+      display: flex;
+      text-align: justify;
       align-content: center;
       list-style-type: none;
+      justify-content: flex-start;
+      width: 400px;
+      height: 50px;
+      margin: 10px;
     }
 
 
     header {
       color: black;
       margin: 10px;
-      text-align: center;
+      text-align: left;
       font-size: 1.8em;
       font-weight: thin;
     }
@@ -47,13 +59,27 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      margin: 15px;
     }
 
     main section {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      left: 1%;
+    }
+
+    main section header {
+
+      font-size: 25px;
+      font-weight: bolder;
+      text-align: left;
+      font-weight: thin;
+      margin: 0px;
+    }
+
+    code {=
+      margin: 10px;
+      background-color: #d3caca;
     }
 
   </style>
@@ -103,12 +129,12 @@
           </p>
 
           <code>
-            
+            System.out.println("Hello, World");
           </code>
 
 
           <p>
-
+            Java is a very popular programming language, however, with a very
           </p>
 
           <code>
